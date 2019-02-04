@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form Details</title>
+</head>
+<body>
+
+<h1>Enter your registration details....</h1>
+
+<form action="{{url_for('prg9serverFunction')}}" method="POST" onsubmit="return
+
+validateRegForm()" id="register">
+
+NAME: <input name = "name" type="text" required /><br>
+AGE : <input name = "age" type="text" required /><br>
+GENDER: <input name = "gender" type="text" required /><br>
+<input name = "Register" type = "submit" />
+</form>
+<script>
+function validateRegForm()
+{
+return true;
+}
+</script>
+</body>
+</html>
